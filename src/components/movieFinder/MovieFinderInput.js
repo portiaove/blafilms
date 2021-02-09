@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
-function SearchBox({onSearch}) {
+function MovieFinderInput({onSearch}) {
 
   const [inputValue, setInputValue] = useState('')
+
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -19,4 +20,4 @@ function SearchBox({onSearch}) {
   )
 }
 
-export default SearchBox
+export default MovieFinderInput

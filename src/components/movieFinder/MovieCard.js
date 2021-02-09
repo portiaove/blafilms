@@ -1,7 +1,7 @@
 import React from 'react'
-import placeholderImg from '../assets/placeholder.png'
+import placeholderImg from '../../assets/placeholder.png'
 
-function Card({result}) {
+function MovieCard({result}) {
   return(
     <div className="search-item">
       <img
@@ -16,4 +16,4 @@ function Card({result}) {
   )
 }
 
-export default Card
+export default MovieCard

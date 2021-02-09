@@ -86,3 +86,7 @@ button {
 .search-item .search-item-data .meta {
   font-size: 14px;
 }
+
+.center-text {
+  text-align: center;
+}

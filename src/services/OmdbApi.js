@@ -1,12 +1,10 @@
-import React from 'react';
+const searchMovies = async (title, page) => {
 
-const searchMovies = async (title) => {
-  const response = await fetch(
-    `http://www.omdbapi.com/?apikey=a461e386&s=${title}`,
-  )
+  const response = await fetch(`http://www.omdbapi.com/?apikey=a461e386&s=${title}&page=${page}`)
 
   return response.json()
-
 }
 
-export default { searchMovies }
+const OmdbApiService = { searchMovies }
+
+export default OmdbApiService
